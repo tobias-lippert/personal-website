@@ -1,0 +1,111 @@
+{
+  "Metadata": {
+    "title": "Tobias Lippert - Software Engineer",
+    "titleTemplate": "%s | Tobias Lippert",
+    "description": "Personal website and blog of Tobias Lippert. Writing about full-stack development, cloud infrastructure, and software architecture."
+  },
+  "Navigation": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "rights": "© {year} Tobias Lippert. All rights reserved."
+  },
+  "LanguageSwitch": {
+    "switchLocale": "Switch language",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "ThemeToggle": {
+    "toggle": "Toggle theme"
+  },
+  "HomePage": {
+    "greeting": "Hi, I'm",
+    "name": "Tobias Lippert",
+    "intro": "Software Engineer focused on full-stack development and cloud infrastructure. I write about architecture, automation, and the things that drive me.",
+    "readBlog": "Read the Blog",
+    "aboutMe": "About Me",
+    "recentPosts": "Recent Posts",
+    "viewAllPosts": "View all posts",
+    "noPosts": "No posts yet. Check back soon!"
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Thoughts on full-stack development, cloud infrastructure, and software architecture.",
+    "series": "Series: {name}",
+    "noPosts": "No posts yet. Check back soon!"
+  },
+  "BlogPost": {
+    "backToBlog": "Back to blog",
+    "updated": "Updated {date}",
+    "seriesLabel": "Series: {name} ({current} of {total})",
+    "previous": "Previous",
+    "next": "Next",
+    "comments": "Comments"
+  },
+  "AboutPage": {
+    "title": "About",
+    "metaDescription": "Learn more about me, my background, and what I do.",
+    "heading": "About Me",
+    "intro": "Software Engineer passionate about architecture, automation, and developer experience.",
+    "backgroundTitle": "Background",
+    "backgroundText": "My focus is on the backend with Java and Spring Boot, but I'm equally comfortable on the frontend with React, Angular, and TypeScript. I appreciate containerization and spend a lot of time with cloud infrastructure on AWS: spinning up EKS clusters with Terraform and rolling out applications via Helm. On the automation side, I like using Renovate to keep dependencies up to date.",
+    "whatIDoTitle": "What I Do",
+    "whatIDoText": "As a Senior IT Consultant at msg for banking, I build web applications for the banking sector, automate cloud infrastructure, and optimize development workflows. I share what I learn here on my blog.",
+    "interestsTitle": "Interests",
+    "interest1": "Full-Stack Development",
+    "interest2": "Cloud & DevOps",
+    "interest3": "Developer Experience",
+    "interest4": "Software Architecture",
+    "connectTitle": "Connect",
+    "connectText": "Feel free to reach out on <github>GitHub</github> or <linkedin>LinkedIn</linkedin>."
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "metaDescription": "Get in touch with me.",
+    "heading": "Contact",
+    "intro": "Want to get in touch? Feel free to reach out through any of the channels below.",
+    "email": "Email",
+    "emailDescription": "Send me an email",
+    "github": "GitHub",
+    "githubDescription": "Check out my code",
+    "linkedin": "LinkedIn",
+    "linkedinDescription": "Connect with me on LinkedIn"
+  },
+  "ErrorPage": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again.",
+    "retry": "Try again"
+  },
+  "NotFoundPage": {
+    "code": "404",
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go Home"
+  },
+  "Search": {
+    "placeholder": "Search posts...",
+    "title": "Search Posts",
+    "searching": "Searching...",
+    "noResults": "No results found for \"{query}\"",
+    "startTyping": "Start typing to search posts..."
+  },
+  "CategoryPage": {
+    "backToBlog": "← Back to blog",
+    "title": "Category: {name}",
+    "count": "{count, plural, =1 {1 post} other {# posts}} in this category"
+  },
+  "TagPage": {
+    "backToBlog": "← Back to blog",
+    "title": "Posts tagged \"{name}\"",
+    "count": "{count, plural, =1 {1 post} other {# posts}} found"
+  },
+  "SeriesPage": {
+    "backToBlog": "← Back to blog",
+    "title": "Series: {name}",
+    "count": "{count, plural, =1 {1 post} other {# posts}} in this series",
+    "orderedNote": "Posts are ordered by their position in the series."
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "Metadata": {
+    "title": "Tobias Lippert - Software Engineer",
+    "titleTemplate": "%s | Tobias Lippert",
+    "description": "Persönliche Website und Blog von Tobias Lippert. Über Full-Stack-Entwicklung, Cloud-Infrastruktur und Softwarearchitektur."
+  },
+  "Navigation": {
+    "home": "Startseite",
+    "blog": "Blog",
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
+  "Footer": {
+    "rights": "© {year} Tobias Lippert. Alle Rechte vorbehalten."
+  },
+  "LanguageSwitch": {
+    "switchLocale": "Sprache wechseln",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "ThemeToggle": {
+    "toggle": "Design wechseln"
+  },
+  "HomePage": {
+    "greeting": "Hallo, ich bin",
+    "name": "Tobias Lippert",
+    "intro": "Software Engineer mit Fokus auf Full-Stack-Entwicklung und Cloud-Infrastruktur. Hier schreibe ich über Architektur, Automatisierung und alles, was mich bewegt.",
+    "readBlog": "Zum Blog",
+    "aboutMe": "Über mich",
+    "recentPosts": "Aktuelle Beiträge",
+    "viewAllPosts": "Alle Beiträge anzeigen",
+    "noPosts": "Noch keine Beiträge. Schau bald wieder vorbei!"
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Gedanken zu Full-Stack-Entwicklung, Cloud-Infrastruktur und Softwarearchitektur.",
+    "series": "Serie: {name}",
+    "noPosts": "Noch keine Beiträge. Schau bald wieder vorbei!"
+  },
+  "BlogPost": {
+    "backToBlog": "Zurück zum Blog",
+    "updated": "Aktualisiert {date}",
+    "seriesLabel": "Serie: {name} ({current} von {total})",
+    "previous": "Vorheriger",
+    "next": "Nächster",
+    "comments": "Kommentare"
+  },
+  "AboutPage": {
+    "title": "Über mich",
+    "metaDescription": "Erfahre mehr über mich, meinen Hintergrund und was ich mache.",
+    "heading": "Über mich",
+    "intro": "Software Engineer mit Leidenschaft für Architektur, Automatisierung und Developer Experience.",
+    "backgroundTitle": "Hintergrund",
+    "backgroundText": "Mein Schwerpunkt liegt im Backend mit Java und Spring Boot, aber auch im Frontend bin ich mit React, Angular und TypeScript zu Hause. Ich schätze Containerisierung und arbeite viel mit Cloud-Infrastruktur auf AWS: EKS-Cluster mit Terraform aufsetzen und Anwendungen per Helm ausrollen. Wenn es um Automatisierung geht, nutze ich gerne Renovate, um Dependencies aktuell zu halten.",
+    "whatIDoTitle": "Was ich mache",
+    "whatIDoText": "Als Senior IT Consultant bei msg for banking entwickle ich Webanwendungen für den Bankensektor, automatisiere Cloud-Infrastruktur und optimiere Entwicklungsprozesse. Mein Wissen teile ich hier im Blog.",
+    "interestsTitle": "Interessen",
+    "interest1": "Full-Stack-Entwicklung",
+    "interest2": "Cloud & DevOps",
+    "interest3": "Developer Experience",
+    "interest4": "Softwarearchitektur",
+    "connectTitle": "Kontakt",
+    "connectText": "Kontaktiere mich gerne auf <github>GitHub</github> oder <linkedin>LinkedIn</linkedin>."
+  },
+  "ContactPage": {
+    "title": "Kontakt",
+    "metaDescription": "Nimm Kontakt mit mir auf.",
+    "heading": "Kontakt",
+    "intro": "Möchtest du in Kontakt treten? Schreib mir gerne über einen der folgenden Kanäle.",
+    "email": "E-Mail",
+    "emailDescription": "Schreib mir eine E-Mail",
+    "github": "GitHub",
+    "githubDescription": "Sieh dir meinen Code an",
+    "linkedin": "LinkedIn",
+    "linkedinDescription": "Vernetze dich mit mir auf LinkedIn"
+  },
+  "ErrorPage": {
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuche es erneut.",
+    "retry": "Erneut versuchen"
+  },
+  "NotFoundPage": {
+    "code": "404",
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "goHome": "Zur Startseite"
+  },
+  "Search": {
+    "placeholder": "Beiträge suchen...",
+    "title": "Beiträge suchen",
+    "searching": "Suche läuft...",
+    "noResults": "Keine Ergebnisse für \"{query}\"",
+    "startTyping": "Beginne zu tippen, um Beiträge zu suchen..."
+  },
+  "CategoryPage": {
+    "backToBlog": "← Zurück zum Blog",
+    "title": "Kategorie: {name}",
+    "count": "{count, plural, =1 {1 Beitrag} other {# Beiträge}} in dieser Kategorie"
+  },
+  "TagPage": {
+    "backToBlog": "← Zurück zum Blog",
+    "title": "Beiträge mit Tag \"{name}\"",
+    "count": "{count, plural, =1 {1 Beitrag} other {# Beiträge}} gefunden"
+  },
+  "SeriesPage": {
+    "backToBlog": "← Zurück zum Blog",
+    "title": "Serie: {name}",
+    "count": "{count, plural, =1 {1 Beitrag} other {# Beiträge}} in dieser Serie",
+    "orderedNote": "Beiträge sind nach ihrer Position in der Serie geordnet."
+  }
+}
