@@ -1,4 +1,4 @@
 export default {
   "*.{ts,tsx,js,jsx}": ["npm run lint:staged --"],
-  "**/*": ["npm run format:staged --"],
+  "*.{json,md,yml,yaml,css}": ["npm run format:staged --"],
 };
