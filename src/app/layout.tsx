@@ -13,15 +13,11 @@ const fontMono = JetBrains_Mono({
 
 // Root layout is intentionally minimal.
 // All locale-specific rendering happens in [locale]/layout.tsx.
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html suppressHydrationWarning>
       <body
-        className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased min-h-screen flex flex-col`}
+        className={`${fontSans.variable} ${fontMono.variable} flex min-h-screen flex-col font-sans antialiased`}
       >
         {children}
       </body>

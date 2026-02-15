@@ -3,7 +3,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { use } from "react";
 import { Mail, Github, Linkedin } from "lucide-react";
-import { Link } from "@/i18n/navigation";
 import { SOCIAL_LINKS } from "@/lib/social";
 
 export async function generateMetadata({
@@ -19,11 +18,7 @@ export async function generateMetadata({
   };
 }
 
-export default function ContactPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = use(params);
   setRequestLocale(locale);
 
@@ -53,10 +48,8 @@ export default function ContactPage({
   return (
     <div className="container py-12">
       <div className="max-w-2xl">
-        <h1 className="text-4xl font-bold tracking-tight mb-4">
-          {t("heading")}
-        </h1>
-        <p className="text-xl text-muted-foreground mb-12">{t("intro")}</p>
+        <h1 className="mb-4 text-4xl font-bold tracking-tight">{t("heading")}</h1>
+        <p className="mb-12 text-xl text-muted-foreground">{t("intro")}</p>
 
         <div className="grid gap-6">
           {contactLinks.map((link) => (
@@ -64,19 +57,13 @@ export default function ContactPage({
               key={link.name}
               href={link.href}
               target={link.href.startsWith("mailto") ? undefined : "_blank"}
-              rel={
-                link.href.startsWith("mailto")
-                  ? undefined
-                  : "noopener noreferrer"
-              }
-              className="flex items-center gap-4 p-4 rounded-lg border bg-card hover:bg-accent transition-colors"
+              rel={link.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
+              className="flex items-center gap-4 rounded-lg border bg-card p-4 transition-colors hover:bg-accent"
             >
               <link.icon className="h-6 w-6 text-muted-foreground" />
               <div>
                 <h2 className="font-semibold">{link.name}</h2>
-                <p className="text-sm text-muted-foreground">
-                  {link.description}
-                </p>
+                <p className="text-sm text-muted-foreground">{link.description}</p>
               </div>
             </a>
           ))}

@@ -7,11 +7,7 @@ import { formatDate } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-export default function HomePage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = use(params);
   setRequestLocale(locale);
 
@@ -41,13 +37,11 @@ export default function HomePage({
       {/* Recent Posts Section */}
       {recentPosts.length > 0 && (
         <section className="py-12">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-bold tracking-tight">
-              {t("recentPosts")}
-            </h2>
+          <div className="mb-8 flex items-center justify-between">
+            <h2 className="text-2xl font-bold tracking-tight">{t("recentPosts")}</h2>
             <Link
               href="/blog"
-              className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1"
+              className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
             >
               {t("viewAllPosts")}
               <ArrowRight className="h-4 w-4" />
@@ -55,16 +49,11 @@ export default function HomePage({
           </div>
           <div className="grid gap-8">
             {recentPosts.map((post) => (
-              <article
-                key={post.slug}
-                className="group relative flex flex-col space-y-2"
-              >
+              <article key={post.slug} className="group relative flex flex-col space-y-2">
                 <h3 className="text-xl font-semibold">{post.title}</h3>
                 <p className="text-muted-foreground">{post.description}</p>
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                  <time dateTime={post.publishDate}>
-                    {formatDate(post.publishDate, locale)}
-                  </time>
+                  <time dateTime={post.publishDate}>{formatDate(post.publishDate, locale)}</time>
                   {post.tags.length > 0 && (
                     <div className="flex gap-2">
                       {post.tags.slice(0, 3).map((tag) => (

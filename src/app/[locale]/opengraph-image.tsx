@@ -15,49 +15,47 @@ export function generateStaticParams() {
 
 export default async function Image() {
   return new ImageResponse(
-    (
+    <div
+      style={{
+        height: "100%",
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "#09090b",
+        fontFamily: "sans-serif",
+      }}
+    >
       <div
         style={{
-          height: "100%",
-          width: "100%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: "#09090b",
-          fontFamily: "sans-serif",
+          gap: "20px",
         }}
       >
-        <div
+        <h1
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "20px",
+            fontSize: "72px",
+            fontWeight: "bold",
+            color: "#fafafa",
+            margin: 0,
           }}
         >
-          <h1
-            style={{
-              fontSize: "72px",
-              fontWeight: "bold",
-              color: "#fafafa",
-              margin: 0,
-            }}
-          >
-            YourName
-          </h1>
-          <p
-            style={{
-              fontSize: "32px",
-              color: "#a1a1aa",
-              margin: 0,
-            }}
-          >
-            Software Engineer & Technical Writer
-          </p>
-        </div>
+          YourName
+        </h1>
+        <p
+          style={{
+            fontSize: "32px",
+            color: "#a1a1aa",
+            margin: 0,
+          }}
+        >
+          Software Engineer & Technical Writer
+        </p>
       </div>
-    ),
+    </div>,
     {
       ...size,
     }

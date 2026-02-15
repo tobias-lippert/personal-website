@@ -76,9 +76,7 @@ export function Giscus() {
   }, [resolvedTheme, mounted]);
 
   if (!mounted) {
-    return (
-      <div className="animate-pulse h-32 bg-muted rounded-lg" />
-    );
+    return <div className="h-32 animate-pulse rounded-lg bg-muted" />;
   }
 
   return <div ref={ref} className="giscus" />;

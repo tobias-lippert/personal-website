@@ -19,11 +19,7 @@ export async function generateMetadata({
   };
 }
 
-export default function BlogPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = use(params);
   setRequestLocale(locale);
 
@@ -33,12 +29,8 @@ export default function BlogPage({
   return (
     <div className="container py-12">
       <div className="max-w-4xl">
-        <h1 className="text-4xl font-bold tracking-tight mb-4">
-          {t("title")}
-        </h1>
-        <p className="text-xl text-muted-foreground mb-8">
-          {t("description")}
-        </p>
+        <h1 className="mb-4 text-4xl font-bold tracking-tight">{t("title")}</h1>
+        <p className="mb-8 text-xl text-muted-foreground">{t("description")}</p>
 
         {/* Posts */}
         <div className="space-y-12">
@@ -46,9 +38,7 @@ export default function BlogPage({
             <article key={post.slug} className="group">
               <div className="flex flex-col space-y-2">
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <time dateTime={post.publishDate}>
-                    {formatDate(post.publishDate, locale)}
-                  </time>
+                  <time dateTime={post.publishDate}>{formatDate(post.publishDate, locale)}</time>
                   {post.category && (
                     <>
                       <span>·</span>
@@ -77,9 +67,7 @@ export default function BlogPage({
         </div>
 
         {posts.length === 0 && (
-          <p className="text-muted-foreground text-center py-12">
-            {t("noPosts")}
-          </p>
+          <p className="py-12 text-center text-muted-foreground">{t("noPosts")}</p>
         )}
       </div>
     </div>

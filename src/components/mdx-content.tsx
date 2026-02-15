@@ -28,7 +28,7 @@ interface MDXContentProps {
 export function MDXContent({ code }: MDXContentProps) {
   const Component = useMDXComponent(code);
   return (
-    <div className="prose prose-neutral dark:prose-invert max-w-none">
+    <div className="prose prose-neutral max-w-none dark:prose-invert">
       <Component components={components} />
     </div>
   );

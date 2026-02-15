@@ -5,12 +5,7 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
 import MiniSearch from "minisearch";
 import { Search, X } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -83,7 +78,7 @@ export function SearchDialog() {
   // Handle keyboard shortcut (Cmd/Ctrl + K)
   React.useEffect(() => {
     if (!mounted) return;
-    
+
     function handleKeyDown(e: KeyboardEvent) {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
@@ -182,9 +177,7 @@ export function SearchDialog() {
 
           <div className="max-h-[400px] overflow-y-auto px-2 pb-2">
             {isLoading && (
-              <div className="py-6 text-center text-sm text-muted-foreground">
-                {t("searching")}
-              </div>
+              <div className="py-6 text-center text-sm text-muted-foreground">{t("searching")}</div>
             )}
 
             {!isLoading && query && results.length === 0 && (
@@ -202,7 +195,7 @@ export function SearchDialog() {
                       className="w-full rounded-md px-3 py-2 text-left hover:bg-accent"
                     >
                       <div className="font-medium">{result.title}</div>
-                      <div className="text-sm text-muted-foreground line-clamp-1">
+                      <div className="line-clamp-1 text-sm text-muted-foreground">
                         {result.description}
                       </div>
                       {result.tags && result.tags.length > 0 && (

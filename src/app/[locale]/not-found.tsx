@@ -6,12 +6,10 @@ export default function NotFound() {
   const t = useTranslations("NotFoundPage");
 
   return (
-    <div className="container flex flex-col items-center justify-center min-h-[60vh] py-12">
-      <h1 className="text-6xl font-bold mb-4">{t("code")}</h1>
-      <h2 className="text-2xl font-semibold mb-4">{t("title")}</h2>
-      <p className="text-muted-foreground mb-8 text-center max-w-md">
-        {t("description")}
-      </p>
+    <div className="container flex min-h-[60vh] flex-col items-center justify-center py-12">
+      <h1 className="mb-4 text-6xl font-bold">{t("code")}</h1>
+      <h2 className="mb-4 text-2xl font-semibold">{t("title")}</h2>
+      <p className="mb-8 max-w-md text-center text-muted-foreground">{t("description")}</p>
       <Button asChild>
         <Link href="/">{t("goHome")}</Link>
       </Button>

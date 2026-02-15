@@ -17,11 +17,7 @@ export async function generateMetadata({
   };
 }
 
-export default function AboutPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = use(params);
   setRequestLocale(locale);
 
@@ -30,12 +26,10 @@ export default function AboutPage({
   return (
     <div className="container py-12">
       <div className="max-w-3xl">
-        <h1 className="text-4xl font-bold tracking-tight mb-8">
-          {t("heading")}
-        </h1>
+        <h1 className="mb-8 text-4xl font-bold tracking-tight">{t("heading")}</h1>
 
         <div className="prose prose-neutral dark:prose-invert">
-          <p className="text-xl text-muted-foreground mb-8">{t("intro")}</p>
+          <p className="mb-8 text-xl text-muted-foreground">{t("intro")}</p>
 
           <h2>{t("backgroundTitle")}</h2>
           <p>{t("backgroundText")}</p>
@@ -55,20 +49,12 @@ export default function AboutPage({
           <p>
             {t.rich("connectText", {
               github: (chunks) => (
-                <a
-                  href={SOCIAL_LINKS.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer">
                   {chunks}
                 </a>
               ),
               linkedin: (chunks) => (
-                <a
-                  href={SOCIAL_LINKS.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer">
                   {chunks}
                 </a>
               ),

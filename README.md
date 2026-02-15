@@ -82,18 +82,18 @@ Your content here in MDX format.
 
 ### Frontmatter Schema
 
-| Field | Type | Required | Description |
-|-------|------|----------|-------------|
-| `title` | string | Yes | Post title |
-| `description` | string | Yes | Brief description |
-| `publishDate` | string (ISO) | Yes | Publication date |
-| `updatedDate` | string (ISO) | No | Last update date |
-| `draft` | boolean | No | Hide from production |
-| `tags` | string[] | No | Post tags |
-| `category` | string | No | Post category |
-| `series` | string | No | Series name |
-| `seriesOrder` | number | No | Order in series |
-| `comments` | boolean | No | Enable comments (default: true) |
+| Field         | Type         | Required | Description                     |
+| ------------- | ------------ | -------- | ------------------------------- |
+| `title`       | string       | Yes      | Post title                      |
+| `description` | string       | Yes      | Brief description               |
+| `publishDate` | string (ISO) | Yes      | Publication date                |
+| `updatedDate` | string (ISO) | No       | Last update date                |
+| `draft`       | boolean      | No       | Hide from production            |
+| `tags`        | string[]     | No       | Post tags                       |
+| `category`    | string       | No       | Post category                   |
+| `series`      | string       | No       | Series name                     |
+| `seriesOrder` | number       | No       | Order in series                 |
+| `comments`    | boolean      | No       | Enable comments (default: true) |
 
 ### Publishing Rules
 

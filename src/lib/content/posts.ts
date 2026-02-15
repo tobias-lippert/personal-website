@@ -16,10 +16,7 @@ export function isPublished(post: Post): boolean {
 export function getPublishedPosts(): Post[] {
   return posts
     .filter(isPublished)
-    .sort(
-      (a, b) =>
-        new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
-    );
+    .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
 }
 
 /**
@@ -27,8 +24,7 @@ export function getPublishedPosts(): Post[] {
  */
 export function getAllPosts(): Post[] {
   return posts.sort(
-    (a, b) =>
-      new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+    (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
   );
 }
 
